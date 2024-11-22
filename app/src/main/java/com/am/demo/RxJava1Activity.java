@@ -37,6 +37,9 @@ public class RxJava1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        SampleClassForFetch classForFetch = new SampleClassForFetch();
+        classForFetch.getAppName();
+
 //        startActivity(new Intent(this,RxJava2Activity.class));
 //        finish();
         RxLifecycle.injectRxLifecycle(this);
